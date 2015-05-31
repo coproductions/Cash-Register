@@ -342,7 +342,7 @@ document.getElementById("zero").addEventListener('click',function(){
 
 document.getElementById("zeroZero").addEventListener('click',function(){
   if (!newFunction  && !contFunction){
-    displayArray.push(00);
+    displayArray.push(0,0);
      display = Number(displayArray.join(''));
     document.getElementById('display').innerHTML = display;
   } else if (contFunction){
@@ -350,7 +350,7 @@ document.getElementById("zeroZero").addEventListener('click',function(){
         case 'add' : //calculatorModule.add(display);
                     document.getElementById('display').innerHTML = display;
                     displayArray = [];
-                    displayArray.push(00);
+                    displayArray.push(0,0);
                     display = Number(displayArray.join(''));
         break;
       }
@@ -359,7 +359,7 @@ document.getElementById("zeroZero").addEventListener('click',function(){
   else {
     calculatorModule.storeTotal(display);
     displayArray = [];
-    displayArray.push(00);
+    displayArray.push(0,0);
      display = Number(displayArray.join(''));
     document.getElementById('display').innerHTML = display;
     newFunction = false;

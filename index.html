@@ -3,46 +3,57 @@
   <head>
     <meta charset="UTF-8">
     <title>Cash Register</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
   </head>
   <body>
   <div id="container" >
 
-    <div style="width:200px;height:30px;border:1px solid blue; padding = '3px'" id='display'></div>
+
+    <div class='display'>
+
+    </div>
 
     <table>
-        <tr>
-          <td><button id = 'seven'>7</button></td>
-          <td><button id = 'eight'>8</button></td>
-          <td><button id = 'nine'>9</button></td>
-          <td><button id = 'divide'>/</button></td>
+      <tr>
+      <div id="toprow">
+        <div id='display'></div>
+        <div id='operator' class='display'></div>
+      </div>
 
-          <td><button id = 'clear'>clear</button></td>
-        </tr>
-        <tr>
-          <td><button id = 'four'>4</button></td>
-          <td><button id = 'five'>5</button></td>
-          <td><button id = 'six'>6</button></td>
-          <td><button id = 'multiply'>*</button></td>
-          <td><button id = 'getBalance'>get balance</button></td>
-        </tr>
-        <tr>
-          <td><button id = 'one'>1</button></td>
-          <td><button id = 'two'>2</button></td>
-          <td><button id = 'three'>3</button></td>
-          <td><button id = 'subtract'>-</button></td>
+      </tr>
+      <tr>
+        <td><button class="numberButton" id = 'seven'>7</button></td>
+        <td><button class="numberButton" id = 'eight'>8</button></td>
+        <td><button class="numberButton" id = 'nine'>9</button></td>
+        <td><button class="operatorButton" id = 'divide'>/</button></td>
 
-          <td><button id = 'depositCash'>deposit cash</button></td>
-        </tr>
-        <tr>
-          <td><button id = 'zero'>0</button></td>
+        <td><button class="operatorButton" id = 'clear'>clear</button></td>
+      </tr>
+      <tr>
+        <td><button class="numberButton" id = 'four'>4</button></td>
+        <td><button class="numberButton" id = 'five'>5</button></td>
+        <td><button class="numberButton" id = 'six'>6</button></td>
+        <td><button class="operatorButton" id = 'multiply'>*</button></td>
+        <td><button class="operatorButton" id = 'getBalance'>get balance</button></td>
+      </tr>
+      <tr>
+        <td><button class="numberButton" id = 'one'>1</button></td>
+        <td><button class="numberButton" id = 'two'>2</button></td>
+        <td><button class="numberButton" id = 'three'>3</button></td>
+        <td><button class="operatorButton" id = 'subtract'>-</button></td>
 
-          <td><button id = 'dot'>.</button></td>
-          <td><button id = 'zeroZero'>00</button></td>
-          <td><button id = 'add'>+</button></td>
-          <td><button id = 'withdrawCash'>withdraw cash</button></td>
-        </tr>
+        <td><button class="operatorButton" id = 'depositCash'>deposit cash</button></td>
+      </tr>
+      <tr>
+        <td><button class="numberButton" id = 'zero'>0</button></td>
+
+        <td><button class="numberButton" id = 'dot'>.</button></td>
+        <td><button class="numberButton" id = 'zeroZero'>00</button></td>
+        <td><button class="operatorButton" id = 'add'>+</button></td>
+        <td><button id = 'withdrawCash'>withdraw cash</button></td>
+      </tr>
     </table>
-    <div><button style="width:210px;" id = 'equals'>=</button></div>
+    <div><button class="operatorButton" style="width:210px;" id = 'equals'>=</button></div>
 
     </div>
     <script src="js/calculator.js" type="text/javascript">
